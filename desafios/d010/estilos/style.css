@@ -11,33 +11,33 @@
 
 @font-face {
     font-family: 'pBold';
-    src: url(fontes/Roboto-Bold.ttf) format(truetype);
+    src: url(../fontes/Roboto-Bold.ttf) format(truetype);
 }
 
 @font-face {
     font-family: 'p';
-    src: url(fontes/Roboto-Regular.ttf) format(truetype);
+    src: url(../fontes/Roboto-Regular.ttf) format(truetype);
     font-weight: normal;
     font-size: normal;
 }
 
 @font-face {
     font-family: 'forced';
-    src: url(fontes/FORCED\ SQUARE.ttf) format(truetype);
+    src: url(../fontes/FORCED\ SQUARE.ttf) format(truetype);
     font-weight: normal;
     font-size: normal;
 }
 
 @font-face {
     font-family: 'square';
-    src: url(fontes/Golden\ Age\ Shad.ttf) format(truetype);
+    src: url(../fontes/Golden\ Age\ Shad.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'android';
-    src: url(fontes/idroid.otf) format(opentype);
+    src: url(../fontes/idroid.otf) format(opentype);
     font-weight: normal;
     font-style: normal;
 }
