@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 320px;/* A MINIMA LARGURA */
+            max-width: 800px;/* ATÉ ONDE A LARGURA PODE ATINGIR */
+            margin: auto;/* CENTRALIZA NO MEIO */
+        }
+
+        img {
+            width: 100%;/* A IMAGEM TERÁ 100% DE LARGURA NO MAIN, E CASO A LARGURA ATINJA 600PX OU MENOS A IMAGEM MUDA GRAÇAS AO SOURCE MEDIA */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque et asperiores, neque quod pariatur quis suscipit deserunt, porro voluptatem officiis quas iure id. Cum officiis modi tempore omnis assumenda impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nam commodi praesentium vero, quae suscipit magni et unde perspiciatis debitis nesciunt aperiam exercitationem qui. Nesciunt illum animi perferendis eos tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti odio quae soluta enim iure sunt quaerat quidem dolore fugiat doloremque qui possimus, illum sit omnis mollitia temporibus ut repellendus facere?</p>
+
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+
+            <img src="imagens/irina-blok.jpg" alt="irina-blok">
+
+        </picture>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque et asperiores, neque quod pariatur quis suscipit deserunt, porro voluptatem officiis quas iure id. Cum officiis modi tempore omnis assumenda impedit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nam commodi praesentium vero, quae suscipit magni et unde perspiciatis debitis nesciunt aperiam exercitationem qui. Nesciunt illum animi perferendis eos tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti odio quae soluta enim iure sunt quaerat quidem dolore fugiat doloremque qui possimus, illum sit omnis mollitia temporibus ut repellendus facere?</p>
+    </main>
+</body>
+</html>

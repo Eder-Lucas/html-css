@@ -1,0 +1,418 @@
+@charset "UTF-8";
+
+/* REGRA GERAL CSS */
+* {/* FAZ O ALGUMAS FUNÇÕES OCUPAREM TODO O ESPAÇO DO BODY */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+                        /* FONTES (inicio) */
+
+@font-face {
+    font-family: 'pBold';
+    src: url(fontes/Roboto-Bold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'p';
+    src: url(fontes/Roboto-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'forced';
+    src: url(fontes/FORCED\ SQUARE.ttf) format(truetype);
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'square';
+    src: url(fontes/Golden\ Age\ Shad.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+                        /* FONTES (final) */
+
+body {
+    background-color: #b9babc;
+}
+
+header {
+    width: 100%; /* REGRA CSS PARA OCUPAR TODO O BODY / *{} */
+    color: white;
+    background-image: linear-gradient(360deg, #404040 50%, #88F2A2 40% );
+    font-family: 'forced';
+}
+
+                        /* MENU (inicio) */
+
+                        
+ul#up {
+    width: 365px;
+    list-style: none;/* RETIRA AS 'BOLINHAS' DAS LISTAS */
+    display: flex;/* SE ALINHAM HORIZONTALMENTE UM DO LADO DA OUTRA */
+    flex-wrap: wrap;
+    color: black;
+    background-color: #88F2A2;
+    opacity: 0.9;/* REGULA A OPACIDADE E DEFINE COMO INFERIOR A NORMAL */
+    transition: 0.8s;/* UM DELAY PARA A FUTURA AÇÃO */
+}
+
+ul#up:hover {
+    opacity: 1;/* AO CLICAR A OPACIDADE MUDA GRADUALMENTE ATRAVÉZ DA TRANSIÇÃO */
+    border-radius: 15px 0px 15px 0px;
+    border: 1px solid #00ff3c;
+    background-color: black;
+    color: #00ff3c;
+    transition: 0.7s;/* AO TIRAR O MOUSE ACONTECE O O MSM SOQ INVERSO */
+}
+
+li.up {
+    cursor: pointer;/* DEFINE O PONTEIRO PARA CLIQUE */
+    margin: 10px;
+    transition: 0.4s;/* TRANSIÇÃO PARA HOVER */
+}
+
+li.up:hover {
+    color: #00ff3c;
+    background-color: black;
+    text-decoration: underline;
+    transition: 0.4s;/* TRANSIÇÃO AO SAIR */
+}
+
+header > h1, h2 {
+    text-align: center;
+}
+
+                        /* MENU (final) */
+
+
+span {
+    font-family: 'pBold', Verdana, Geneva, Tahoma, sans-serif;
+    color: #14421f;
+}
+
+span.final {/* ESTILIZAÇÃO ÚNICA PARA O FOOTER */
+    font-family: 'pBold', Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+                        /* TITULOS DO HEADER (inicio) */
+
+h1, h2, h3 {
+    text-transform: uppercase;/* É POSSIVEL COM ESTA FUNÇÃO ALTERAR A FORMA DO QUE ESTÁ PRESENTE NO HTML SEM QUE O MESMO SEJA ESCRITO, COMO NESSE CASSO UPPERCASE FAZ TODAS AS LETRAS FICAREM MAIÚSCULAS */
+    letter-spacing: 5px;/* ESPAÇAMENTO ENTRE AS LETRAS */
+}
+
+h2, h3, h4 {
+    font-size: 1.5em;
+}
+
+h1 {
+    color: black;
+    font: 900 3em 'square', verdana, sans-serif, serif;
+    padding: 40px 20px 0px 20px;
+}
+
+h2#up {
+    font: 500 1.1em 'forced', verdana, sans-serif, serif;
+    padding: 20px 20px 25px 20px;
+    margin-top: 20px;
+}
+
+                        /* TITULOS DO HEADER (final) */
+
+h2#down {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;/* O TEXTO FICA COLADO NA ESQUERDA DO MAIN */
+    padding: 15px 0px 15px 12px;
+    font-family: 'android', Verdana, Geneva, Tahoma, sans-serif;
+    color: #257c3b;
+}
+
+h3 {
+    margin: 10px 0px 15px 12px;
+    font-family: 'android', Verdana, Geneva, Tahoma, sans-serif;
+    color: #257c3b;
+    background-image: linear-gradient(to right, rgba(0, 255, 0, 0.681), rgba(0, 128, 0, 0));
+    text-shadow: 1px 1px 1px #404040;
+}
+
+main {
+    margin: 5px auto 1px auto;
+    width: 55%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0.5px 2px 4px 2px #404040;
+    transition: 0.5s;/* FAZ O EFEITI DELAY QUANDO UMA MEDIA QUERY ENTRA EM FUNCIONAENTO */
+}
+
+p {
+    padding: 20px;
+    font: 300 1.2em 'p';
+    text-indent: 25px;
+    line-height: 1.7em;/* ALTURA DAS LINHAS PARA TODOS OS ELEMENTOS P */
+    word-spacing: 1px;/* ESPAÇO ENTRE AS PALAVRAS */
+    letter-spacing: 0.5px;/* ESPAÇO ENTRE AS LETRAS */ 
+}
+
+                        /* NAVEGAÇÕES (inicio) */
+
+a { 
+    padding: 1px;
+    font-family: 'pBold', Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;/* PERDE ALGUNS ELEMENTOS DOS LINKS */
+    text-transform: uppercase;
+    color: #123a1c;
+    background-color: #00ff0094;
+    opacity: 1;/* EFEITO DE OPACIDADE COM HOVER */
+    transition: 0.2s;
+}
+
+a:hover {/* MOUSE EM CIMA */
+    color: #00ff3c;
+    background-color: black;
+    text-decoration: underline;
+    border-radius: 7px;
+    opacity: 0.9;
+}
+
+a:active {/* QUANDO CLICADO */
+    color: black;
+    background-color: #00ff3c;
+}
+
+a:visted {/* QUANDO JÁ FOI VISITADO */
+    background-color: #243721;
+    color: rgb(255, 255, 255);
+}
+
+a::after {/* PSEUDO-CLASSE */
+    content: '🔗';/* ADCIONA ALGO COMO SE TIVESSE PRESENTE EM HTML, ECONOMIZA ESPAÇO DE ARMAZENAMENTO E TORNA O CÓDIGO DINÂMICO */
+}
+
+                        /* NAVEGAÇÕES (final)*/
+
+                        /* VIDEO E IMAGENS (inicio) */
+
+picture {
+    display: flex;
+    justify-content: center;/* CENTRALIZA AS IMAGENS USANDO FLEXBLOX */
+    padding: 20px 0px 20px 0px;
+}
+
+div {
+    position: relative;/* ALTERA A POSIÇÃO DO VIDEO TENDO COMO REFERÊNCIA A POSIÇÃO INICIAL, TORNANDO-O RESPONSIVO */
+    width: 100%;
+    padding-bottom: 56.25%;/* REGRA DE 3 */
+}
+
+div iframe {
+    position: absolute;/* DEFINE SEU PONTO FIXO */
+    width: 100%;/* OCUPA TODO O MAIN */
+    height: 100%;
+    border: none;/* RETIRA A BORDA AUTOMATICA */
+}
+
+                        /* VIDEO E IMAGENS (final) */
+
+#fundoDoExtra {/* SEU FUNDO */
+    margin: 5px auto 35px auto;
+    width: 55%;
+    height: 770px;
+    padding: 30px 25px 10px 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0.5px 2px 4px 2px #757575;
+    transition: 0.5s;/* EFEITO DELAY PARA A MEDIA QUERY */
+}
+
+#extra {/* CONTEUDO EM SI */
+    height: 620px;
+    background-color: blue;
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px 0px #404040;
+    background-color: #88F2A2;
+}
+
+h4 {
+    font-family: 'pBold', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #336740;
+    padding: 10px 0px 10px 10px;
+}
+
+p#final {
+    padding: 35px 20px 20px 20px;
+    text-indent: 0px;
+    text-align: center;
+}
+
+ul#down, ul#down2 {
+    display: block;/* QUANDO SE TORNA UM BLOCO OU UM FLEX AS LISTAS SE ALINHAM LADO A LADO */
+    list-style: none;/* RETIRA SUAS 'BOLINHAS' */
+    margin: 0px 25px 0px 25px;
+}
+
+div#flexUL:hover {
+    cursor: text;/* CURSOR PARA TIPO TEXTO */
+}
+
+li.down {
+    font: 500 1.3em 'forced', verdana, 'sans-serif', 'serif';
+    text-shadow: 1px 1px 1px #9d9d9d;
+    transition: 0.3s;/* PARA EFEITO HOVER */
+}
+
+li.down:hover {
+    text-decoration: underline;
+    color: #22ff00;
+    background-color: #0d1a10;
+}
+
+li.down::before {/* PSEUDO-CLASSE Q ADCIONA ALGO ANTES */
+    content: '\2713   ';/* CÓDIGO Q ADCIONA UMA SETA ANTES DO CONTEUDO EM HTML */
+}
+
+div#flexUL {/* POR ESTAR PRESENTE EM SOMENTE UM GRUPO DE LISTAS, AO TORNAR A DIV DESSE GRUPO DE LISTAS COMO FLEX E EVENTUALMENTE 'wrap' ELAS SE ALINHAM NAS 'ul#down'*/
+    padding: 0;/* CENTRALIZA */
+    height: 199px;/* LIMITE DAS LISTAS */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;/* MAIOR ESPAÇO ENTRE ELES */
+}
+
+div#flexUL:hover {
+    cursor: text;
+}
+
+footer {
+    margin: 0;/* OCUPA TODO O ESPAÇO DO MAIN */
+    padding: 0;
+    background-color: #0d1a10;
+    color: white;
+}
+
+footer > p {/* APENAS PARA OS ELEMENTOS P DENTRO DO FOOTER */
+    padding: 3px;
+    text-align: center;
+}
+
+                /* RESPONSIVIDADE /  MEDIAS QUERY (inicio) */
+
+/* tela media */
+
+@media (min-width: 1300px) and (max-width: 1500px) {/* SO IRÁ ACONTECER QUANDO O TAMANHO DA TELA TIVER ENTE 1500PX E 1300PX */
+    main{
+        width: 65%;
+    }
+
+    #fundoDoExtra {
+        width: 65%;
+    }
+}
+
+/* tablet */
+
+@media (min-width: 900px) and (max-width:1300px) {
+    main {
+        width: 90%;
+    }
+
+    header {
+        background-image: linear-gradient(360deg, #404040 50%, #88F2A2 40% );
+    }
+
+    #fundoDoExtra {
+        width: 90%;
+    }
+}
+
+/* tablet correção do header */
+
+@media (min-width: 900px) and (max-width:1009px) {
+    header {
+        background-image: linear-gradient(360deg, #404040 45%, #88F2A2 40%);
+    }
+
+    h2#up {
+        padding: 30px;
+        margin: 45px  0px 10px 0px;
+    }
+}
+
+/* celular */
+
+@media (min-width: 300px) and (max-width:900px) {
+    main {
+        width: 100%;
+    }
+
+    header {
+        background-image: linear-gradient(360deg, #404040 40%, #88F2A2 40% );
+    }
+
+    #fundoDoExtra {
+        width: 100%;
+    }
+}
+
+/* celular correção do extra parte 1 */
+
+@media (max-width:595px) and (min-width: 300px) {
+    div#flexUL {
+        height: 390px;
+    }
+
+    #extra {
+        height: 1050px;
+    }
+
+    #extra > p {
+        text-align: center;
+    }
+
+    #fundoDoExtra {
+        height: 1275px;
+    }
+
+    footer > p {
+        padding: 10px;
+    }
+}
+
+/* celular correção do extra parte 2 */
+
+@media (max-width: 810px) and (min-width: 595px) {
+    #extra {
+        height: 700px;
+    }
+
+    #extra > p {
+        text-align: center;
+    }
+
+    #fundoDoExtra {
+        height: 900px;
+    }
+
+    footer > p {
+        padding: 10px;
+    }
+}
+
+                    /* RESPONSIVIDADE /  MEDIAS QUERY (final) */

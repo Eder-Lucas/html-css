@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+ /*
+    EM HTML ´É ID   = EM CSS É # - NÃO PODE VARIOS ELEMENTOS NO MESMO DOCUMENTO
+    
+    EM HTML É CLASS = EM CSS É . - PODE VARIOS ELEMENTOS
+ */
+
+body {
+    background-color: rgba(242, 131, 250, 0.276);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(241, 50, 255);
+}
+
+#principal {
+    text-align: center;
+    background-color: rgb(241, 50, 255);
+    color: white;
+}
+
+h2 {
+    color: rgb(157, 30, 166);
+}
+
+.basico {
+    color: rgba(137, 24, 93, 0.504);
+}
+
+.intermediario {
+    color: rgba(9, 16, 74, 0.731);
+}
+
+.avancado {
+    color: rgba(29, 4, 70, 0.885);
+}
+
+.destaque {
+    background-color: rgba(214, 248, 120, 0.432);
+}
+
