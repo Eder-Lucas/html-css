@@ -1,12 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Gochi+Hand & display=swap');
+
+:root {
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-titulo: 'Passion One', cursive, sans-serif;
+    --fonte-cordel: 'Gochi Hand', cursive, verdana, sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
+    font-family: var(--fonte-padrao);
     background-color: darkgray;
 }
 
@@ -18,6 +30,8 @@ header {
 
 header > h1 {
     padding-top: 50px;
+    font-family: var(--fonte-titulo);
+    font-size: 4em;
     font-variant: small-caps;/* TODAS AS LETRAS MAIUSCULAS MAS AS PRIMEIRAS LETRAS SÃO MAIORES */
 }
 
@@ -39,6 +53,8 @@ section {
     padding-top: 10vh;/* 10% DE TUDO QUE VC VÊ */
     padding-bottom: 10vh;
     padding-left: 30px;
+    font-family: var(--fonte-cordel);
+    font-size: 3vw;/* DEPENDENDO DA LARGURA ELE SE ADAPTA */
     line-height: 2em;
 }
 
@@ -53,7 +69,8 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;/* VIRA UM BLOCO ADAPTAVEL */
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.355);
 }
 
