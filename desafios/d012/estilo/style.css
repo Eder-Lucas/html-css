@@ -54,7 +54,7 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     font-family: var(--fonte-cordel);
-    font-size: 3vw;/* DEPENDENDO DA LARGURA ELE SE ADAPTA */
+    font-size: 3.5vw;/* DEPENDENDO DA LARGURA ELE SE ADAPTA */
     line-height: 2em;
 }
 
