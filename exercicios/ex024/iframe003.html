@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Faça uma escolha</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint sunt vitae debitis perferendis totam numquam, asperiores beatae labore voluptas quaerat eaque libero, recusandae quidem doloremque! Et placeat architecto saepe dicta.</p>
+
+    <ul>
+        <li> <a href="paginas-extras/pagina001.html" target="frame">Primeira página</a> </li>
+        <li> <a href="paginas-extras/pagina002.html" target="frame">Segunda página</a> </li>
+        <li> <a href="paginas-extras/pagina003.html" target="frame">Terceira página</a> </li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel repellendus illum odit consequuntur nisi quibusdam architecto error aut! Iste, labore a enim deleniti totam laborum est aliquam dicta blanditiis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt deleniti consectetur eius mollitia rerum recusandae minima blanditiis aliquam libero minus eum quidem id, voluptatibus quasi provident ipsum possimus, soluta dicta!</p>
+
+    <!-- NAME USADO NO TARGET PARA CARREGAR AQUI -->
+    <iframe id="tela" name="frame" srcdoc="<h1> ESCOLHA ALGUMA PÁGINA PARA CARREGAR AQUI DENTRO ☝️</h1>">
+    <!--
+        SRCDOC = permite escrever em html e assim fazer uma pagina inicial simples / para algo mais avançado é melhor uma página própria
+    -->
+        
+        
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere enim ipsa sed beatae dolor, illo inventore in adipisci similique quidem eveniet impedit non nesciunt mollitia alias vero ex possimus dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quibusdam similique rerum quidem nihil architecto aspernatur dolorum numquam voluptas. Nihil sit fuga natus magni quo ipsum deleniti quis reiciendis qui.</p>
+</body>
+</html>
