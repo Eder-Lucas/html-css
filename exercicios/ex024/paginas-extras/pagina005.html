@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+
+        body {
+            background-color: lightgray;
+        }
+
+        h1:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 onclick="clicou()">Clique em mim</h1>
+
+    <div id="saida"></div>
+
+
+    <script>// PS: APRENDER APOS O CURSO DE HTML E CSS
+        function clicou() {
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p> Você clicou </p>'
+        }
+    </script>
+</body>
+</html>
