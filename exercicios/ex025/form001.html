@@ -17,10 +17,15 @@
 
     <!-- BASICO -->
 
-    <form action="cadastro.js" autocomplete="off">
+    <form action="cadastro.js" method="post" autocomplete="off">
     <!--
         autocomplete = TIRA A SUGESTÃO DE NOME
+        method POST = TIRA OS DADOS DA URL
+        method GET = DEIXA OS DADOS NA URL
         action = ENVIA O DADO PARA ALGUM LUGAR / PHP, JS..
+
+        GET = não pode passar de 3mil bytes/ 3mil letras
+        POST = usar para senhas, cartões de credito
     -->
         <p><label for="inome">nome:</label><!--SE CONECTA COM A CAIXA-->
             <input type="text" name="nome" id="inome"></p>

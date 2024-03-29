@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+</head>
+
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.js" method="post" autocomplete="on">
+
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="11" placeholder="nome do usuario" autocomplete="username">
+            <!--
+                REQUIRED = todos os campos tem que ser preenchidos
+                MIN-LEGTH/MAX-LEGHT = numero max e min de letrass permitidos
+                PLACEHOLDER = dica que fica na caixa do formulário
+                AUTOCOMPLETE = indica que tipo de dado esse campo esta recebendo
+
+                AUTOCOMPLETE NO LABEL NO FUNCIONA SE O FORM ESTIVER COM ELE NO "on"
+            -->
+        </p>
+
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="11" placeholder="minimo é 8 letras" autocomplete="current-password">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <!--TIPO RESET APAGA OS DADOS QUE FORAM COLOCADOS-->
+        </p>
+    </form>
+</body>
+</html>
