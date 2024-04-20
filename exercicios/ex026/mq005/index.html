@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0"/> <!-- google icon -->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css"> 
 </head>
 
-<body>
+<body onresize="mudouTamanho()"> <!-- analisa o tamanho -->
     <header>
         <h1>Meu Site</h1>
-
-        <menu>
+        <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span> <!-- google icon -->
+        <menu id="itensMenu">
             <ul>
                 <li> <a href="#">Opção 1</a></li>
                 <li> <a href="#">Opção 2</a></li>
@@ -34,5 +36,27 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis sed recusandae culpa porro obcaecati maiores ullam quasi, sequi quam, possimus libero corrupti molestiae et, soluta ducimus perspiciatis nisi id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo reprehenderit omnis itaque porro veritatis animi, accusamus soluta sit voluptates, repudiandae, recusandae laudantium eveniet error ducimus culpa libero debitis dolorem?</p>
         </article>
     </main>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 600) {//se a largura passar a media-query
+                itensMenu.style.display = 'block'//o menu é obrigado a aparecer
+            }
+            else {
+                itensMenu.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            //se ja estiver sendo exibido 'block' após clicar os itens somem
+            if (itensMenu.style.display == 'block') {
+                itensMenu.style.display = 'none'
+            }
+            //se não tiver exibindo e você clicar, os itens aparecem
+            else {
+                itensMenu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
