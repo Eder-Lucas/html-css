@@ -25,7 +25,7 @@
             </p>
             <p>
                 <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="tel" autocomplete="tel" minlength="15" maxlength="15" placeholder="Seu Número" onkeypress="mascara_tel()" required>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" minlength="15" maxlength="15" placeholder="Seu Número" onkeypress="mascara_tel()" required>
             </p>
 
             <!--ESTUDAR MAIS SOBRE RegEx/ expressões regulares
@@ -41,7 +41,7 @@
 
     <script>// MELHOR USAR JQUERY COM PLUGIN PARA CONFIGURAR FORMATAÇÕES
         function mascara_tel() {
-            var tel = document.getElementById('tel')
+            var tel = document.getElementById('itel')
             if(tel.value.length === 0) {
                 tel.value += "("
             } else if (tel.value.length === 3) {
