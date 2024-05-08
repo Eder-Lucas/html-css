@@ -41,7 +41,7 @@ menu > ul {
     list-style-type: none;
 }
 
-menu > ul > li > a { /* layout do burgerr */
+menu > ul > li > a { /* layout do burger */
     display: block;
     padding: 10px;
     text-align: center;
