@@ -119,8 +119,8 @@ a:active {
 
 @media screen and (orientation: landscape) {
     section {
-        width: 650px;
-        height: 320px;
+        width: 600px;
+        height: 270px;
         display: flex;
     }
 
@@ -136,20 +136,31 @@ a:active {
     }
 
     section div#formulario h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     section div#formulario > p {
-        font-size: 1em;
+        font-size: 0.8em;
         text-align: justify;
     }
 
     i {
-        width: 50px;
+        width: 40px;
+        height: 40px;
+    }
+
+    input.qDigita {
+        height: 30px;
     }
 
     input#entrar {
-        margin-bottom: 10px;
+        width: 100px;
+        padding: 10px;
+        margin: 10px 0px 5px 0px;
+    }
+    
+    a {
+        font-size: 0.8em;
     }
 }
 
@@ -162,6 +173,7 @@ a:active {
 
     section {
         min-width: 750px;
+        height: 320px;
     }
 
     section img {
