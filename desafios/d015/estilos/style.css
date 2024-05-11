@@ -180,9 +180,31 @@ a:active {
         width: 350px;
     }
 
+    section div#formulario h1 {
+        font-size: 2em;
+    }
+
+    section div#formulario > p {
+        font-size: 1em;
+    }
+
+    input#entrar {
+        width: 70%;
+        padding: 15px;
+        margin: 20px 0px 10px 0px;
+    }
+
     input#entrar:hover {
         background-color: #7a14f7;
         cursor: pointer;
+    }
+
+    a {
+        font-size: 1em;
+    }
+
+    i {
+        width: 50px;
     }
 
     i:hover {
