@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+:root {
+    /* CORES */
+    --cor-azulClaro1: #05DBF2;
+    --cor-azulClaro2: #05AFF2;
+    --cor-roxo1: #5516a2;
+    --cor-azulEscuro1: #056CF2;
+    --cor-azulEscuro2: #0756F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #062f81;
+}
+
+section {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50%, -50%);
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+section img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+section div#formulario h1 {
+    margin-bottom: 10px;
+}
+
+section div#formulario > p {
+    font-size: 0.9em;
+}
+
+section div#formulario {
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    margin: 10px;
+}
+
+i { 
+    background-color: #05DBF2;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    outline: none;
+}
+
+input.qDigita {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.507);
+    transition: 0.3s;
+}
+
+input.qDigita:focus {
+    border-bottom: 1px solid black;
+}
+
+input#entrar {
+    padding: 15px;
+    margin: 20px 0px 20px 0px;
+    background-color: var(--cor-roxo1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+input#entrar:focus {
+    background-color: #8c2dff;
+}
+
+a {
+    padding: 10px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <img src="imagens/efeito-fundo.jpg" alt="imagem">
+            </div>
+
+            <div id="formulario">
+                <h1>Login</h1>
+
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
+                    ambiente.</p>
+
+                <form action="login.js" method="post" autocomplete="on">
+                    <p>
+                        <i class="fa-solid fa-user"></i>
+                        <input class="qDigita" type="email" name="email" id="iemail" placeholder="E-mail" required minlength="15" autocomplete="email">
+                    </p>
+
+                    <p> 
+                        <i class="fa-solid fa-lock"></i>
+                        <input class="qDigita" type="password" name="senha" id="isenha" placeholder="Senha" required minlength="8" maxlength="15">
+                    </p>
+
+                    <p>
+                        <input id="entrar" type="submit" value="ENTRAR">
+                    </p>
+
+                    <p> 
+                        <a href="#">Esqueci minha senha</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
