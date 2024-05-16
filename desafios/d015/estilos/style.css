@@ -28,9 +28,7 @@ Grandes Telas: acima de 1200px
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body, html {
-    width: 100%;
-    height: 100%;
+body {
     background-color: #062f81;
 }
 
@@ -120,12 +118,12 @@ a:active {
 @media screen and (orientation: landscape) {
     section {
         width: 600px;
-        height: 270px;
+        height: 238px;
         display: flex;
     }
 
     section img {
-        width: 300px;
+        width: 200px;
         height: 100%;
         border-radius: 20px 0px 0px 20px;
     }
@@ -144,9 +142,14 @@ a:active {
         text-align: justify;
     }
 
-    i {
-        width: 40px;
-        height: 40px;
+    form {
+        margin: 0px;
+    }
+
+    i { 
+        width: 10px;
+        height: 10px;
+        background-color: white;
     }
 
     input.qDigita {
@@ -154,9 +157,9 @@ a:active {
     }
 
     input#entrar {
-        width: 100px;
-        padding: 10px;
-        margin: 10px 0px 5px 0px;
+        width: 90px;
+        padding: 6px;
+        margin: 10px 0px 3px 0px;
     }
     
     a {
@@ -172,7 +175,7 @@ a:active {
     }
 
     section {
-        min-width: 750px;
+        width: 768px;
         height: 320px;
     }
 
@@ -199,20 +202,22 @@ a:active {
         cursor: pointer;
     }
 
+    form {
+        margin: 10px;
+    }
+
     a {
         font-size: 1em;
     }
 
-    i {
+    i { 
+        height: 40px;
         width: 50px;
+        background-color: var(--cor-azulClaro1);
     }
 
-    i:hover {
-        background-color: var(--cor-azulClaro2);
-    }
-
-    i:hover input.qDigita {
-        border-bottom: 1px solid black;
+    input.qDigita {
+        margin-top: 15px;
     }
 
     input.qDigita:hover {
