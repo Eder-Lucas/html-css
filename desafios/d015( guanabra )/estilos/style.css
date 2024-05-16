@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+:root {
+    /* CORES */
+    --cor-azulClaro1: #05DBF2;
+    --cor-azulClaro2: #05AFF2;
+    --cor-azulEscuro1: #056CF2;
+    --cor-azulEscuro2: #0756F2;
+    --cor-roxo1: #5516a2;
+}
