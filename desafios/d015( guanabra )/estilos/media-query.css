@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* Todas as demais midias */
+
+/* Typical Device Breakpoints
+-----------------------------
+
+Tablet: 480px até 768px
+laptop: 768px até 1024px
+desktop: 1024px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    body {
+        background-color: #062f81;
+        background: linear-gradient(40deg, rgba(5,175,242,1) 0%, rgba(5,108,242,1) 0%, rgba(45,98,202,1) 50%, rgba(85,22,162,1) 100%);
+        background-attachment: fixed;
+    }
+
+    section#login {
+        width: 90vw;
+    }
+
+    section#login > div#imagem {
+        float: left;/* a imagem vai para a esquerda */
+        width: 30%;/* tem que ter o width para funcionar */
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;/* o formulario fica na direita */
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        background-color: #062f81;
+        background: linear-gradient(40deg, rgba(5,175,242,1) 0%, rgba(5,108,242,1) 0%, rgba(45,98,202,1) 50%, rgba(85,22,162,1) 100%);
+        background-attachment: fixed;
+    }
+
+    section#login {
+        width: 950px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+}

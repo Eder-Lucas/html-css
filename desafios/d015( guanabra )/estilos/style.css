@@ -41,6 +41,9 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width 0.3s, height 0.3s;/* animação quando a altura e largura mudar */
+    transition-timing-function: ease;/* deixa a animação mais suave */
 }
 
 section#login > div#imagem {
