@@ -65,20 +65,45 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
+    text-align: justify;
     font-size: 0.8em;
+    margin: 10px 0px;
 }
 
 form > div.campo {
     background-color: var(--cor-azulEscuro2);
+    border: 2px solid var(--cor-azulEscuro2);
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;/* cima e embaixo 5 / esquerda e direita 0 */
 }
 
 div.campo > label {/* tira o label */
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 2px;
+}
+
+div.campo > input {
+    background-color: #c89cff;
+    font-size: 1em;
+    width: calc(100% - 44.4px);/* cal*/
+    height: 100%;
+    transform: translateY(-9px);
+    border: 0;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within {/* quando tiver digitando */
+    background-color: white;
 }
 
 form > input[type=submit] {/* chama o input */
