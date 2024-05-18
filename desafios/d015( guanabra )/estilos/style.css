@@ -30,20 +30,20 @@ main {
 }
 
 section#login {
-    position: absolute;
+    position: absolute;/* centraliza verticalmente */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;/* tudo que passar da borda é escondido */
+    overflow: hidden;/* tudo que passar da borda é escondido, deixando a borda redonda */
 
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
 
     transition: width 0.3s, height 0.3s;/* animação quando a altura e largura mudar */
     transition-timing-function: ease;/* deixa a animação mais suave */
+    transform: translate(-50%, -50%);/* transformações e animações sempre no final do código */
 }
 
 section#login > div#imagem {
@@ -80,7 +80,7 @@ form > div.campo {
     margin: 5px 0px;/* cima e embaixo 5 / esquerda e direita 0 */
 }
 
-div.campo > label {/* tira o label */
+div.campo > label {/* tira o nome do label */
     display: none;
 }
 
@@ -94,19 +94,20 @@ div.campo > span {
 div.campo > input {
     background-color: #c89cff;
     font-size: 1em;
-    width: calc(100% - 44.4px);/* cal*/
+    width: calc(100% - 44.4px);/* calcula sua largura */
     height: 100%;
-    transform: translateY(-9px);
     border: 0;
     border-radius: 8px;
     padding: 4px;
+    outline: none;/* tira borda do navegador */
+    transform: translateY(-9px);/* move apenas no eixo y */
 }
 
 div.campo > input:focus-within {/* quando tiver digitando */
     background-color: white;
 }
 
-form > input[type=submit] {/* chama o input */
+form > input[type=submit] {/* chama o input submit( entrar ) */
     display: block;
     font-size: 1em;
     width: 100%;/* do container */
@@ -142,6 +143,6 @@ form > a.botao:hover {
     color: white;
 }
 
-form > a.botao > span {
+form > a.botao > span {/* icone do esqueci a senha */
     font-size: 0.8em;
 }
