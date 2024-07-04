@@ -1,0 +1,14 @@
+-Português Brasil-
+Essa é a versão "oficial" do desafio proposto. Ou seja, indica que ele não foi construido por mim. Diferentemente do 'Projeto Android' e o próprio 'd010', no qual ambos foram desenvolvidos por mim usando mecânicas desse 'd010-oficial'.
+
+Você pode encontrar já resolvido esse mesmo desafio 10 no Curso de HTML5 e CSS3 do Curso em Vídeo com o professor Gustavo Guanabara!
+.
+.
+.
+-English USA-
+This is the "official" version of the proposed challenge. In other words, it indicates that it was not built by me. Unlike 'Projeto Android' and 'd010' itself, which were both developed by me using mechanics from 'd010-oficial'.
+
+You can find this same challenge 10 solved in the HTML5 and CSS3 Course of the Curso em Vídeo with professor Gustavo Guanabara!
+.
+.
+.
